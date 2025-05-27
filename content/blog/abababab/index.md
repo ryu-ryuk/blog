@@ -25,10 +25,6 @@ disclaimer = """
 # id = "3475894789"
 +++
 
-{% alert(tip=true) %}
-
-No fancy ducks were harmed in the making of this post.
-{% end %}
 
 ## intro
 let's get to it now. Let me brief you a little bit about myself~ 
