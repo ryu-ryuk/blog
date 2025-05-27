@@ -6,7 +6,7 @@ minify_html = true
 author = "Alok Ranjan"
 generate_feeds = true
 build_search_index = true
-feed_filenames = ["atom.xml", "rss.xml"]
+feed_filenames = ["rss.xml", "atom.xml"]
 default_language = "en"
 
 taxonomies = [{ name = "tags", feed = true }]
