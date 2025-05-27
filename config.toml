@@ -1,0 +1,51 @@
+base_url = "https://blogs.alokranjan.me"
+title = "cave"
+description = "Tech, Rust, Cybersecurity, and Notes"
+compile_sass = true
+minify_html = true
+author = "Alok Ranjan"
+generate_feeds = true
+build_search_index = true
+feed_filenames = ["atom.xml", "rss.xml"]
+default_language = "en"
+
+taxonomies = [{ name = "tags", feed = true }]
+
+# aliases = []
+# slug = ""
+[markdown]
+header_ids = "enabled"
+render_emoji = true
+external_links_target_blank = true
+highlight_code = true
+highlight_theme = "ayu-dark"
+smart_punctuation = true
+bottom_footnotes = true
+
+[extra]
+default_theme = "dark"
+
+index_format = "fuse_json"
+
+nav.links = [
+    { name = "home", url = "/" },
+    { name = "blog", url = "/blog" },
+    { name = "tags", url = "/tags" },
+    { name = "portfolio", url = "https://alokranjan.me" },
+]
+
+show_copy_button = true
+show_reading_time = true
+show_share_button = true
+
+nav.auto_hide = false
+nav.show_theme_switcher = true
+nav.show_feed = true
+nav.show_repo = true
+show_backlinks = true
+
+source_url = "https://github.com/ryu-ryuk"
+go_to_top = true
+toc_sidebar = true
+
+taxonomies = [{ name = "tags", rss = true }, { name = "categories" }]
