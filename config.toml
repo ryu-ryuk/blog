@@ -5,8 +5,11 @@ compile_sass = true
 minify_html = true
 author = "Alok Ranjan"
 generate_feeds = true
+generate_feed = true
 build_search_index = true
 feed_filenames = ["rss.xml", "atom.xml"]
+feed_filename = ["rss.xml", "atom.xml"]
+
 default_language = "en"
 
 taxonomies = [{ name = "tags", feed = true }]
