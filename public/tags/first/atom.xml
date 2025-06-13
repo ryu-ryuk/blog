@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>cave - first</title>
+    <title>ryu - first</title>
     <subtitle>Tech, Rust, Cybersecurity, and Notes</subtitle>
     <link rel="self" type="application/atom+xml" href="https://blogs.alokranjan.me/tags/first/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me"/>
@@ -48,12 +48,6 @@
 &lt;h2 id=&quot;tl-dr&quot;&gt;TL;DR&lt;&#x2F;h2&gt;
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;
-&lt;hr class=&quot;hr&quot; &#x2F;&gt;
-&lt;div class=&quot;webring-badge&quot;&gt;
-  &lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;previous&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;larr;&lt;&#x2F;a
-  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;Catppuccin webring&lt;&#x2F;a
-  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;next&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;rarr;&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;
 </content>
         
     </entry>

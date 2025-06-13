@@ -44,13 +44,6 @@ function setTheme(theme, saveToLocalStorage = false) {
     // Update the active button based on the selected theme.
     updateActiveButton(theme);
 }
-<script>
-document.querySelectorAll("hr").forEach(el => {
-	el.addEventListener("click", () => {
-		window.location.href = "https://your-webring-link.com";
-	});
-});
-</script>
 
 function resetTheme() {
     // Reset the theme to the default or system preference if no default is set.

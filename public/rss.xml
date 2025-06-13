@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>cave</title>
+      <title>ryu</title>
       <link>https://blogs.alokranjan.me</link>
       <description>Tech, Rust, Cybersecurity, and Notes</description>
       <generator>Zola</generator>
@@ -41,12 +41,6 @@
 &lt;h2 id=&quot;tl-dr&quot;&gt;TL;DR&lt;&#x2F;h2&gt;
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;
-&lt;hr class=&quot;hr&quot; &#x2F;&gt;
-&lt;div class=&quot;webring-badge&quot;&gt;
-  &lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;previous&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;larr;&lt;&#x2F;a
-  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;Catppuccin webring&lt;&#x2F;a
-  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;next&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;rarr;&lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;
 </description>
       </item>
     </channel>

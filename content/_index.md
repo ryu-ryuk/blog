@@ -22,6 +22,7 @@ webring = ["catppuccin"]
 likes:
 - cats everywhere 
 - midnight snacks
+- phonk
 - good documentation
 - ricing my machine to its core 
 

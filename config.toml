@@ -1,5 +1,5 @@
 base_url = "https://blogs.alokranjan.me"
-title = "cave"
+title = "ryu"
 description = "Tech, Rust, Cybersecurity, and Notes"
 compile_sass = true
 minify_html = true
