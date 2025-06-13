@@ -62,8 +62,8 @@ before we say goodbye here, i want to credit the duckquill theme creators for th
 
 
 <hr class="webring-hr" />
-	<div class="webring-badge">
-		<a href="http://ctp-webr.ing/" target="_blank" rel="{{ rel_attributes }}">
-			<strong>← catppuccin webring →</strong>
-		</a>
-	</div>
+<div class="webring-badge">
+  <a href="https://ctp-webr.ing/ryu/previous" target="_blank" rel="{{ rel_attributes }}">&larr;</a
+  ><a href="https://ctp-webr.ing/" target="_blank" rel="{{ rel_attributes }}">Catppuccin webring</a
+  ><a href="https://ctp-webr.ing/ryu/next" target="_blank" rel="{{ rel_attributes }}">&rarr;</a>
+</div>

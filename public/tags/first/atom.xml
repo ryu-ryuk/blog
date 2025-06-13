@@ -49,11 +49,11 @@
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;
 &lt;hr class=&quot;webring-hr&quot; &#x2F;&gt;
-	&lt;div class=&quot;webring-badge&quot;&gt;
-		&lt;a href=&quot;http:&#x2F;&#x2F;ctp-webr.ing&#x2F;&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;
-			&lt;strong&gt;← catppuccin webring →&lt;&#x2F;strong&gt;
-		&lt;&#x2F;a&gt;
-	&lt;&#x2F;div&gt;
+&lt;div class=&quot;webring-badge&quot;&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;previous&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;larr;&lt;&#x2F;a
+  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;Catppuccin webring&lt;&#x2F;a
+  &gt;&lt;a href=&quot;https:&#x2F;&#x2F;ctp-webr.ing&#x2F;ryu&#x2F;next&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;&amp;rarr;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
 </content>
         
     </entry>
