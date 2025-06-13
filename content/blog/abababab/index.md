@@ -61,7 +61,7 @@ i should keep this short so; I'm gonna have to ask you to go [here](https://alok
 before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool <3
 
 
-<hr class="webring-hr" />
+<hr class="hr" />
 <div class="webring-badge">
   <a href="https://ctp-webr.ing/ryu/previous" target="_blank" rel="{{ rel_attributes }}">&larr;</a
   ><a href="https://ctp-webr.ing/" target="_blank" rel="{{ rel_attributes }}">Catppuccin webring</a
