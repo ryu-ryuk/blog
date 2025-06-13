@@ -47,18 +47,15 @@ $ctp-mocha: (
 @include theme-variables using ($theme) {
     @if $theme == "dark" {
         // === MODIFICATIONS START HERE ===
-        // Use the $ctp-mocha palette for the dark theme
 
-        // Define the raw Catppuccin Mocha colors as CSS variables
         @each $name, $color in $ctp-mocha {
           --ctp-#{$name}: #{$color};
         }
 
-        // COLORS - Now using Catppuccin Mocha variables
         --accent-color: var(--ctp-mauve);
-        --accent-color-alpha: rgba(map-get($ctp-mocha, mauve), 0.2); // Example if you need an rgba version
+        --accent-color-alpha: rgba(map-get($ctp-mocha, mauve), 0.2); 
         
-        --bg-color: var(--ctp-base);         // Or --ctp-mantle, your preference
+        --bg-color: var(--ctp-base);        
         --bg-overlay: linear-gradient(rgba(map-get($ctp-mocha, base), 0.9), rgba(map-get($ctp-mocha, base), 0.9)); // Example
         
         --fg-color: var(--ctp-text);

@@ -13,7 +13,7 @@ default_language = "en"
 taxonomies = [{ name = "tags", feed = true }]
 
 # aliases = []
-# slug = ""
+# slug = "blog"
 [markdown]
 header_ids = "enabled"
 render_emoji = true

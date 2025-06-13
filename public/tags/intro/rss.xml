@@ -14,13 +14,7 @@
           <author>who else but ME</author>
           <link>https://blogs.alokranjan.me/blog/abababab/</link>
           <guid>https://blogs.alokranjan.me/blog/abababab/</guid>
-          <description xml:base="https://blogs.alokranjan.me/blog/abababab/">&lt;blockquote class=&quot;tip&quot;&gt;
-	&lt;p class=&quot;alert-title&quot;&gt;
-		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
-	&lt;p&gt;No fancy ducks were harmed in the making of this post.&lt;&#x2F;p&gt;
-
-&lt;&#x2F;blockquote&gt;
-&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
+          <description xml:base="https://blogs.alokranjan.me/blog/abababab/">&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
 &lt;p&gt;let’s get to it now. Let me brief you a little bit about myself~&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;who am i? &lt;strong&gt;Alok&lt;&#x2F;strong&gt; but i am known as “&lt;strong&gt;&lt;em&gt;ryu&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;” on the internet, an ECE|DS undergrad student (what is this place? hell?),&lt;&#x2F;li&gt;
@@ -47,7 +41,12 @@
 &lt;h2 id=&quot;tl-dr&quot;&gt;TL;DR&lt;&#x2F;h2&gt;
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+&lt;hr class=&quot;webring-hr&quot; &#x2F;&gt;
+	&lt;div class=&quot;webring-badge&quot;&gt;
+		&lt;a href=&quot;http:&#x2F;&#x2F;ctp-webr.ing&#x2F;&quot; target=&quot;_blank&quot; rel=&quot;{{ rel_attributes }}&quot;&gt;
+			&lt;strong&gt;← catppuccin webring →&lt;&#x2F;strong&gt;
+		&lt;&#x2F;a&gt;
+	&lt;&#x2F;div&gt;
 </description>
       </item>
     </channel>

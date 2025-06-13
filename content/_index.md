@@ -1,6 +1,9 @@
 +++
 title = "home"
 description = "init"
+[extra]
+webring = ["catppuccin"]
+
 +++
 
 {% crt() %}
