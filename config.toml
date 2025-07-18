@@ -78,7 +78,7 @@ csp = [
         "'none'",
     ] },
 ]
-source_url = "https://github.com/ryu-ryuk/"
+source_url = "https://github.com/ryu-ryuk/blog"
 go_to_top = true
 toc_sidebar = true
 
