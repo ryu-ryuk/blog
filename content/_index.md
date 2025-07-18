@@ -24,20 +24,19 @@ webring = ["catppuccin"]
 
 # ryu ~
 
-a backend engineer, system ricer, and phonk-fueled night coder.  
-often found tweaking dotfiles at 2am with a cat on the lap and a snack in hand.
+a backend engineer, system ricer, and a to-be cybersecurity specialist.  
 
 ---
 
-likes:
-- cats. everywhere. all the time.
-- midnight snacks and coffee that hits hard
-- phonk and lo-fi for long coding sessions
+## likes:
+- cats
+- phonk
+- midnight snacks and coffee
 - good documentation — if it's not documented, it doesn't exist
-- ricing machines to perfection (wm, fonts, colors, everything)
+- ricing (wm, fonts, colors, everything)
 - minimal, efficient cli tools that just work
 
-dislikes:
+## dislikes:
 - people who skip the `man` page
 - messy code and unstructured repos
 - bloated software with zero config options
@@ -46,17 +45,17 @@ dislikes:
 
 ---
 
-tools of choice:
+## tools of choice:
 - neovim + tmux
-- zsh + starship
-- arch btw (tiled wm gang)
-- python, go, rust
-- fastapi, docker, postgres, traefik
+- zsh
+- arch btw (hyprland)
+- python, go, rust, bash, C
+- fastapi, docker, django, postgres, traefik
 
 ---
 
-when i’m not coding:
-- playing badminton  
-- reverse-engineering random stuff  
-- reading about infosec or messing with devops pipelines  
-- rewriting the same script until it feels right  
+## when i’m not coding:
+- playing badminton or walking (indeed, I do touch grass)  
+- exploring reverse-engineering
+- reading about infosec or learning about DevOps  
+- rewriting the same scripts until it feels right  
