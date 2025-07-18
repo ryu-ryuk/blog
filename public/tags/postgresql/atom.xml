@@ -64,16 +64,25 @@
 &lt;p&gt;There is a live recorded demo in the GitHub Repo as well!&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;h3 id=&quot;raw-data&quot;&gt;raw data&lt;&#x2F;h3&gt;
+&lt;figure&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;data.webp&quot; alt=&quot;data&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+&lt;figcaption&gt;the raw data in the endpoint `&#x2F;data`&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;br &#x2F;&gt;
 &lt;h3 id=&quot;strategy-performance&quot;&gt;strategy performance&lt;&#x2F;h3&gt;
+&lt;figure&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;perf.webp&quot; alt=&quot;strategy&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+&lt;figcaption&gt;preview of the `&#x2F;strategy&#x2F;performance` endpoint&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;br &#x2F;&gt;
 &lt;h3 id=&quot;test-coverage&quot;&gt;test coverage&lt;&#x2F;h3&gt;
+&lt;figure&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;test.webp&quot; alt=&quot;test&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
+&lt;figcaption&gt;tests report&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;br &#x2F;&gt;
 &lt;h2 id=&quot;source-code&quot;&gt;source code&lt;&#x2F;h2&gt;
-&lt;p&gt;check out the full code, project structure, and setup instructions here:
+&lt;p&gt;Check out the full code, project structure, and setup instructions here:
 &lt;strong&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ryu-ryuk&#x2F;inv&quot;&gt;github.com&#x2F;ryu-ryuk&#x2F;inv&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 </content>
         
