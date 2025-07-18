@@ -7,9 +7,12 @@ updated = "2025-05-27"
 [taxonomies]
 tags = ["first", "intro"]
 [extra]
+# poor = true
+# 
 # banner = "ab.webp"
-
 toc = true
+styles = ["mods.css"]
+
 toc_inline = true
 toc_ordered = true
 trigger = "nah i am just testing the styling. the following is a [note to self]"
