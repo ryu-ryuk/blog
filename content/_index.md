@@ -2,10 +2,6 @@
 insert_anchor_links = "left"
 title = "stderr.log@ryu"
 description = "init"
-sort_by = "date"
-template = "article_list.html"
-page_template = "article.html"
-paginate_by = 2
 [extra]
 webring = ["catppuccin"]
 
@@ -22,9 +18,13 @@ webring = ["catppuccin"]
 
 {% end %}
 
-# ryu ~
+# Alok Ranjan
 
-a backend engineer, system ricer, and a to-be cybersecurity specialist.  
+{% alert(note=true) %}
+I go by **ryu** on the internet
+{% end %}
+
+I am a **backend engineer**, a **ricer**, and a to-be **cybersecurity specialist** and a lot more ;) .  
 
 ---
 

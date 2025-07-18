@@ -81,24 +81,39 @@ This project taught me a lot—not just about FastAPI, Docker, or (_specially_)*
 
 ### raw data
 
-![data](data.webp)
+<figure>
 
----
+![data](data.webp)
+<figcaption>the raw data in the endpoint `/data`</figcaption>
+</figure>
+
+<br />
+
+
 
 ### strategy performance
 
-![strategy](perf.webp)
 
----
+<figure>
+
+![strategy](perf.webp)
+<figcaption>preview of the `/strategy/performance` endpoint</figcaption>
+</figure>
+
+<br />
 
 ### test coverage
 
-![test](test.webp)
+<figure>
 
----
+![test](test.webp)
+<figcaption>tests report</figcaption>
+</figure>
+
+<br />
 
 ## source code
 
-check out the full code, project structure, and setup instructions here:
+Check out the full code, project structure, and setup instructions here:
 **[github.com/ryu-ryuk/inv](https://github.com/ryu-ryuk/inv)**
 
