@@ -2,6 +2,7 @@
 insert_anchor_links = "left"
 title = "stderr.log@ryu"
 description = "init"
+template = "article_list.html"
 [extra]
 webring = ["catppuccin"]
 
