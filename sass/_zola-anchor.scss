@@ -1,62 +1,73 @@
+// general hover behavior for all headings
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	&:hover .zola-anchor {
-		transform: translateY(-0.125em);
-		opacity: 1;
+    &:hover .zola-anchor {
+        transform: translateY(-0.125em);
+        opacity: 1;
 
-		:root[dir*="rtl"] & {
-			transform: translateY(-0.125em);
-		}
-	}
+        :root[dir*="rtl"] & {
+            transform: translateY(-0.125em);
+        }
+    }
 }
 
+// specific colors for anchors within each heading level
+h1 > .zola-anchor { color: var(--ctp-flamingo, #b889f4); }
+h2 > .zola-anchor { color: var(--ctp-blue, #8aadf4); }
+h3 > .zola-anchor { color: var(--ctp-green, #a6da95); }
+h4 > .zola-anchor { color: var(--ctp-yellow, #eed49f); }
+h5 > .zola-anchor { color: var(--ctp-red, #ed8796); }
+h6 > .zola-anchor { color: var(--ctp-subtext0, #a5adcb); }
+
+
+// base styles for the anchor link
 .zola-anchor {
-	position: absolute;
-	transform: translateX(0.5rem) translateY(-0.125em);
-	opacity: 0;
-	transition: var(--transition);
-	margin-inline-start: calc(-1em + -0.5rem);
-	color: var(--fg-muted-4);
-	line-height: 1;
+    position: absolute;
+    transform: translateX(0.5rem) translateY(-0.125em);
+    opacity: 0;
+    transition: var(--transition);
+    margin-inline-start: calc(-1em + -0.5rem);
+    line-height: 1;
 
-	@media only screen and (max-width: 832px) {
-		display: none;
-	}
+    @media only screen and (max-width: 832px) {
+        display: none;
+    }
 
-	:root[dir*="rtl"] & {
-		transform: translateX(-0.5rem) translateY(-0.125em);
-	}
+    :root[dir*="rtl"] & {
+        transform: translateX(-0.5rem) translateY(-0.125em);
+    }
 
-	&:hover {
-		color: var(--accent-color);
-	}
+    // consistent hover color across all headings
+    &:hover {
+        color: var(--accent-color);
+    }
 
-	&:active {
-		transform: var(--active);
-	}
+    &:active {
+        transform: var(--active);
+    }
 
-	&:focus-visible {
-		opacity: 1;
-	}
+    &:focus-visible {
+        opacity: 1;
+    }
 
-	.icon {
-		-webkit-mask-image: var(--icon-link);
-		mask-image: var(--icon-link);
-		mask-size: cover;
-		transition: var(--transition);
-		width: 1em;
-		height: 1em;
+    .icon {
+        -webkit-mask-image: var(--icon-link);
+        mask-image: var(--icon-link);
+        mask-size: cover;
+        transition: var(--transition);
+        width: 1em;
+        height: 1em;
 
-		:root[dir*="rtl"] & {
-			transform: scaleX(-1);
-		}
-	}
+        :root[dir*="rtl"] & {
+            transform: scaleX(-1);
+        }
+    }
 }
 
 :target .zola-anchor {
-	color: var(--accent-color-alpha);
+    color: var(--accent-color-alpha);
 }

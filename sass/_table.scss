@@ -1,24 +1,29 @@
 table {
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner);
-	border-collapse: collapse;
-	background-color: var(--fg-muted-1);
-	width: 100%;
-	overflow: hidden;
+    box-shadow: var(--edge-highlight);
+    border-radius: var(--rounded-corner);
+    border-collapse: collapse;
+    background-color: var(--ctp-surface0);
+    width: 100%;
+    overflow: hidden;
 
-	tr {
-		&:nth-child(even) {
-			background-color: var(--fg-muted-1);
-		}
+    tr {
+        &:nth-child(even) {
+            background-color: var(--ctp-surface1);
+        }
 
-		th,
-		td {
-			padding: 0.5rem 1rem;
-		}
+        th,
+        td {
+            padding: 0.5rem 1rem;
+        }
 
-		th {
-			background-color: var(--fg-muted-2);
-			font-weight: bold;
-		}
-	}
+        th {
+            background-color: var(--ctp-overlay1);
+            color: var(--fg-color);
+            font-weight: bold;
+        }
+
+        td {
+            color: var(--fg-color);
+        }
+    }
 }

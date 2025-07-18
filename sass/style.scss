@@ -6,12 +6,12 @@
 
 @use "normalize";
 
-@use "variables";
 @use "themes/catppuccin" as cat;
-@use "themes/rose-pine" as rose;
+// @use "themes/rose-pine" as rose;
+@use "variables";
 
 // Apply base colors
-
+@use "zola-anchor";
 
 @use "alerts";
 @use "article-list";
@@ -43,7 +43,7 @@
 @use "title";
 @use "typography";
 @use "visually-hidden";
-@use "zola-anchor";
+@use "mods/modern-headings";
 
 
 // Rosé Pine override
