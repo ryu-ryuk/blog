@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ryu - intro</title>
+    <title>stderr.log@ryu - intro</title>
     <subtitle>Tech, Rust, Cybersecurity, and Notes</subtitle>
     <link rel="self" type="application/atom+xml" href="https://blogs.alokranjan.me/tags/intro/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me"/>
@@ -18,21 +18,21 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me/blog/abababab/"/>
-        <id>https://blogs.alokranjan.me/blog/abababab/</id>
+        <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me/blog/intro/"/>
+        <id>https://blogs.alokranjan.me/blog/intro/</id>
         
-        <content type="html" xml:base="https://blogs.alokranjan.me/blog/abababab/">&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://blogs.alokranjan.me/blog/intro/">&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
 &lt;p&gt;let’s get to it now. Let me brief you a little bit about myself~&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;who am i? &lt;strong&gt;Alok&lt;&#x2F;strong&gt; but i am known as “&lt;strong&gt;&lt;em&gt;ryu&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;” on the internet, an ECE|DS undergrad student (what is this place? hell?),&lt;&#x2F;li&gt;
 &lt;li&gt;where am i from? &lt;strong&gt;Earth&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
-&lt;li&gt;juggling college together with personal projects like this or Yoru (&lt;em&gt;secret&lt;&#x2F;em&gt;) and some professional work over at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iitm-paradox&quot;&gt;IIT Madras&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;juggling college together with personal projects like this or Yoru (&lt;em&gt;secret&lt;&#x2F;em&gt;) and some professional work over at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iitm-paradox&quot;&gt;IIT Madras&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;what-plans-do-i-have-in-the-near-future&quot;&gt;what plans do I have in the near future?&lt;&#x2F;h2&gt;
 &lt;p&gt;(besides living)&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;apart from improving my typing skills, i really want to learn Japanese; enough to understand the words shown in anime.&lt;&#x2F;li&gt;
-&lt;li&gt;improve in Rust and excel in GO. to know about my skill-set; you can simply go &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;about&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;improve in Rust and excel in GO. to know about my skill-set; you can simply go &lt;a href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;about&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;cybersecurity [ace something like hackthebox].&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;interests&quot;&gt;interests?&lt;&#x2F;h2&gt;
@@ -44,7 +44,7 @@
 &lt;li&gt;learning about tech brings me pleasure.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;projects&quot;&gt;projects&lt;&#x2F;h2&gt;
-&lt;p&gt;i should keep this short so; I’m gonna have to ask you to go &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;projects&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;i should keep this short so; I’m gonna have to ask you to go &lt;a href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;projects&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;tl-dr&quot;&gt;TL;DR&lt;&#x2F;h2&gt;
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;

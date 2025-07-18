@@ -1,31 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-      <title>ryu</title>
+      <title>stderr.log@ryu</title>
       <link>https://blogs.alokranjan.me</link>
       <description>Tech, Rust, Cybersecurity, and Notes</description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://blogs.alokranjan.me/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 27 May 2025 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Building a Containerized Financial Data API with FastAPI and Docker</title>
+          <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+          <author>Alok (ryu)</author>
+          <link>https://blogs.alokranjan.me/blog/inv/</link>
+          <guid>https://blogs.alokranjan.me/blog/inv/</guid>
+          <description xml:base="https://blogs.alokranjan.me/blog/inv/">&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;how-it-started&quot;&gt;How it started?&lt;&#x2F;h2&gt;
+&lt;p&gt;Yesterday, I received a backend assignment from Invsto. the goal was to build a containerized API service that could store, serve, and analyze Stock price data.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-s-inside&quot;&gt;What’s inside?&lt;&#x2F;h2&gt;
+&lt;p&gt;I built a complete FastAPI backend with the following key components:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;a &lt;strong&gt;PostgreSQL&lt;&#x2F;strong&gt; database to store time-series price data&lt;&#x2F;li&gt;
+&lt;li&gt;a clean rest &lt;strong&gt;API&lt;&#x2F;strong&gt; to ingest and retrieve it&lt;&#x2F;li&gt;
+&lt;li&gt;a &lt;em&gt;moving average crossover strategy&lt;&#x2F;em&gt; to analyze market trends&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;unit tests&lt;&#x2F;strong&gt; with over &lt;strong&gt;&lt;em&gt;90% coverage&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;a fully &lt;strong&gt;dockerized&lt;&#x2F;strong&gt; environment, orchestrated via &lt;strong&gt;make&lt;&#x2F;strong&gt; commands&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;but beyond the checklist, what made this project worthwhile was how it &lt;em&gt;felt&lt;&#x2F;em&gt; like building something production-ready—debugging tests, handling edge cases, and documenting everything like it mattered; because I had planned to log it in this blogging website (finally)&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-trading-logic&quot;&gt;The Trading Logic!&lt;&#x2F;h2&gt;
+&lt;p&gt;at the core is a simple but &lt;strong&gt;Effective Trading Strategy&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;take two moving averages—one short (20-day), one long (50-day)&lt;&#x2F;li&gt;
+&lt;li&gt;when the short average crosses &lt;em&gt;above&lt;&#x2F;em&gt; the long, that’s a &lt;strong&gt;Buy&lt;&#x2F;strong&gt; signal&lt;&#x2F;li&gt;
+&lt;li&gt;when it crosses &lt;em&gt;below&lt;&#x2F;em&gt;, that’s a &lt;strong&gt;Sell&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;the system scans the data for crossover points and calculates basic profit&#x2F;loss from those trades. simple logic, but implementing it cleanly, testably, and in a way that integrates into an API—that’s where the challenge lies.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;uff-bugs&quot;&gt;Uff! Bugs&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;beetle-test-db-nightmare&quot;&gt;🐞 Test DB nightmare&lt;&#x2F;h3&gt;
+&lt;p&gt;Early on, tests kept failing even though they used a separate sqlite database. turned out they were accidentally connecting to the dev postgres container—resulting in state bleed and weird errors.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;fix&lt;&#x2F;strong&gt;: I updated the test setup to fully isolate the sqlite test DB, and cleaned stale containers using &lt;code&gt;make down&lt;&#x2F;code&gt;.
+&lt;strong&gt;lesson&lt;&#x2F;strong&gt;: To double-check your test environment assumptions.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;beetle-strategy-returns-0-trades&quot;&gt;🐞 Strategy returns “0 trades”&lt;&#x2F;h3&gt;
+&lt;p&gt;My tests expected a buy signal—but the logic returned nothing.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;fix&lt;&#x2F;strong&gt;: Turns out my strategy only counts &lt;em&gt;full trades&lt;&#x2F;em&gt; (buy + sell). the test data had a buy signal, but no corresponding sell. I had to redesign the test to simulate a full market cycle.
+&lt;strong&gt;lesson&lt;&#x2F;strong&gt;: Test data should reflect the exact logic you’re testing—not just part of it.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;reflections&quot;&gt;Reflections ~&lt;&#x2F;h2&gt;
+&lt;p&gt;This project taught me a lot—not just about FastAPI, Docker, or (&lt;em&gt;specially&lt;&#x2F;em&gt;)&lt;strong&gt;pandas&lt;&#x2F;strong&gt;—but about treating small assignments like real systems. the biggest win wasn’t just getting it to work, but making it clean, testable, and explainable.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;visuals&quot;&gt;Visuals&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is a live recorded demo in the GitHub Repo as well!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;raw-data&quot;&gt;raw data&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;data.webp&quot; alt=&quot;data&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;strategy-performance&quot;&gt;strategy performance&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;perf.webp&quot; alt=&quot;strategy&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;test-coverage&quot;&gt;test coverage&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;inv&#x2F;test.webp&quot; alt=&quot;test&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;source-code&quot;&gt;source code&lt;&#x2F;h2&gt;
+&lt;p&gt;check out the full code, project structure, and setup instructions here:
+&lt;strong&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ryu-ryuk&#x2F;inv&quot;&gt;github.com&#x2F;ryu-ryuk&#x2F;inv&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>who tis the?</title>
           <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
           <author>who else but ME</author>
-          <link>https://blogs.alokranjan.me/blog/abababab/</link>
-          <guid>https://blogs.alokranjan.me/blog/abababab/</guid>
-          <description xml:base="https://blogs.alokranjan.me/blog/abababab/">&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
+          <link>https://blogs.alokranjan.me/blog/intro/</link>
+          <guid>https://blogs.alokranjan.me/blog/intro/</guid>
+          <description xml:base="https://blogs.alokranjan.me/blog/intro/">&lt;h2 id=&quot;intro&quot;&gt;intro&lt;&#x2F;h2&gt;
 &lt;p&gt;let’s get to it now. Let me brief you a little bit about myself~&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;who am i? &lt;strong&gt;Alok&lt;&#x2F;strong&gt; but i am known as “&lt;strong&gt;&lt;em&gt;ryu&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;” on the internet, an ECE|DS undergrad student (what is this place? hell?),&lt;&#x2F;li&gt;
 &lt;li&gt;where am i from? &lt;strong&gt;Earth&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
-&lt;li&gt;juggling college together with personal projects like this or Yoru (&lt;em&gt;secret&lt;&#x2F;em&gt;) and some professional work over at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iitm-paradox&quot;&gt;IIT Madras&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;juggling college together with personal projects like this or Yoru (&lt;em&gt;secret&lt;&#x2F;em&gt;) and some professional work over at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iitm-paradox&quot;&gt;IIT Madras&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;what-plans-do-i-have-in-the-near-future&quot;&gt;what plans do I have in the near future?&lt;&#x2F;h2&gt;
 &lt;p&gt;(besides living)&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;apart from improving my typing skills, i really want to learn Japanese; enough to understand the words shown in anime.&lt;&#x2F;li&gt;
-&lt;li&gt;improve in Rust and excel in GO. to know about my skill-set; you can simply go &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;about&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;improve in Rust and excel in GO. to know about my skill-set; you can simply go &lt;a href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;about&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;cybersecurity [ace something like hackthebox].&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;interests&quot;&gt;interests?&lt;&#x2F;h2&gt;
@@ -37,7 +99,7 @@
 &lt;li&gt;learning about tech brings me pleasure.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;projects&quot;&gt;projects&lt;&#x2F;h2&gt;
-&lt;p&gt;i should keep this short so; I’m gonna have to ask you to go &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;projects&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;i should keep this short so; I’m gonna have to ask you to go &lt;a href=&quot;https:&#x2F;&#x2F;alokranjan.me&#x2F;projects&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;tl-dr&quot;&gt;TL;DR&lt;&#x2F;h2&gt;
 &lt;p&gt;:0&lt;&#x2F;p&gt;
 &lt;p&gt;before we say goodbye here, i want to credit the duckquill theme creators for the idea of this blog site. and ofcourse people at Catppuccin for the theme colors you guys are cool &amp;lt;3&lt;&#x2F;p&gt;

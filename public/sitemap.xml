@@ -7,8 +7,12 @@
         <loc>https://blogs.alokranjan.me/blog/</loc>
     </url>
     <url>
-        <loc>https://blogs.alokranjan.me/blog/abababab/</loc>
+        <loc>https://blogs.alokranjan.me/blog/intro/</loc>
         <lastmod>2025-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/blog/inv/</loc>
+        <lastmod>2025-07-18</lastmod>
     </url>
     <url>
         <loc>https://blogs.alokranjan.me/blog/page/1/</loc>
@@ -17,9 +21,27 @@
         <loc>https://blogs.alokranjan.me/tags/</loc>
     </url>
     <url>
+        <loc>https://blogs.alokranjan.me/tags/docker/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/fastapi/</loc>
+    </url>
+    <url>
         <loc>https://blogs.alokranjan.me/tags/first/</loc>
     </url>
     <url>
         <loc>https://blogs.alokranjan.me/tags/intro/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/postgresql/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/projects/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/sqlalchemy/</loc>
     </url>
 </urlset>
