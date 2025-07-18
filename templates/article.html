@@ -134,6 +134,21 @@
 	{%- endif -%}
 
 	{{ page.content | safe }}
+
+	<script>
+	window.addEventListener('DOMContentLoaded', function() {
+	document.querySelectorAll('article :is(h1, h2, h3, h4, h5, h6)').forEach(function(heading) {
+	    if (!heading.id) return;
+	    if (heading.querySelector('.zola-anchor')) return;
+	    var anchor = document.createElement('a');
+	    anchor.className = 'zola-anchor';
+	    anchor.href = '#' + heading.id;
+	    anchor.setAttribute('aria-label', 'Anchor link for: ' + heading.id);
+	    anchor.textContent = '# ';
+	    heading.insertBefore(anchor, heading.firstChild);
+	  });
+	});
+	</script>
 </article>
 
 {%- if page.extra.comments.id -%}
