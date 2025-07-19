@@ -2,4 +2,8 @@
 
 {% block content %}
 {{ section.content | safe }}
+<div class="featured-latest-wrapper">
+    {% include "partials/featured_or_latest.html" %}
+</div>
 {% endblock content %}
+

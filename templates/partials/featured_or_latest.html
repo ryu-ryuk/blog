@@ -1,0 +1,26 @@
+{# This partial displays the featured post if available, otherwise the latest post #}
+{%- set blog_section = get_section(path="blog/_index.md") -%}
+{%- set posts = blog_section.pages | sort(attribute="date", direction="desc") -%}
+{%- set featured_post = posts | filter(attribute="extra.featured", value=true) | first -%}
+{%- if featured_post -%}
+    <section id="featured-post">
+    <h2>Featured Blog</h2>
+    <a href="{{ featured_post.permalink }}"><h3>{{ featured_post.title }}</h3></a>
+    {%- if featured_post.description %}
+        <p>{{ featured_post.description | markdown | safe }}</p>
+    {%- endif %}
+    <small>{{ featured_post.date | date(format="%B %d, %Y") }}</small>
+    </section>
+{%- else -%}
+    {%- set latest_post = posts | first -%}
+    {%- if latest_post -%}
+    <section id="latest-post">
+        <h2>Latest Blog</h2>
+        <a href="{{ latest_post.permalink }}"><h3>{{ latest_post.title }}</h3></a>
+        {%- if latest_post.description %}
+        <p>{{ latest_post.description | markdown | safe }}</p>
+        {%- endif %}
+        <small>{{ latest_post.date | date(format="%B %d, %Y") }}</small>
+    </section>
+    {%- endif %}
+{%- endif %}
