@@ -7,6 +7,10 @@
         <loc>https://blogs.alokranjan.me/blog/</loc>
     </url>
     <url>
+        <loc>https://blogs.alokranjan.me/blog/agentic-ai/</loc>
+        <lastmod>2025-07-19</lastmod>
+    </url>
+    <url>
         <loc>https://blogs.alokranjan.me/blog/intro/</loc>
         <lastmod>2025-05-27</lastmod>
     </url>
@@ -21,6 +25,12 @@
         <loc>https://blogs.alokranjan.me/tags/</loc>
     </url>
     <url>
+        <loc>https://blogs.alokranjan.me/tags/agentic-ai/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/ai-agents/</loc>
+    </url>
+    <url>
         <loc>https://blogs.alokranjan.me/tags/docker/</loc>
     </url>
     <url>
@@ -31,6 +41,12 @@
     </url>
     <url>
         <loc>https://blogs.alokranjan.me/tags/intro/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/langchain/</loc>
+    </url>
+    <url>
+        <loc>https://blogs.alokranjan.me/tags/llm/</loc>
     </url>
     <url>
         <loc>https://blogs.alokranjan.me/tags/postgresql/</loc>

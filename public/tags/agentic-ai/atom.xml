@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>stderr.log@ryu - agentic AI</title>
+    <subtitle>Tech, Rust, Cybersecurity, and Notes</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blogs.alokranjan.me/tags/agentic-ai/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-07-19T00:00:00+00:00</updated>
+    <id>https://blogs.alokranjan.me/tags/agentic-ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Agentic AI: planning, reasoning, and acting with Autonomy</title>
+        <published>2025-07-19T00:00:00+00:00</published>
+        <updated>2025-07-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            ryu
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blogs.alokranjan.me/blog/agentic-ai/"/>
+        <id>https://blogs.alokranjan.me/blog/agentic-ai/</id>
+        
+        <content type="html" xml:base="https://blogs.alokranjan.me/blog/agentic-ai/">&lt;h2 id=&quot;what-is-an-agentic-ai&quot;&gt;What is an Agentic AI&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Agentic AI&lt;&#x2F;strong&gt; refers to systems that &lt;em&gt;don’t&lt;&#x2F;em&gt; just answer questions, but can plan, decide, and act on their own.&lt;&#x2F;p&gt;
+&lt;p&gt;They use LLMs + Tools + Memory to handle Multi-Step Tasks without being told exactly what to do at each step.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;for-example&quot;&gt;For example:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You say “&lt;strong&gt;Book me a trip to Delhi this weekend under Rs.5000.&lt;&#x2F;strong&gt;”
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;em&gt;&lt;strong&gt;Agentic AI&lt;&#x2F;strong&gt; might&lt;&#x2F;em&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search for flights &amp;amp; buses.&lt;&#x2F;li&gt;
+&lt;li&gt;Check Hotels.&lt;&#x2F;li&gt;
+&lt;li&gt;Compare Costs.&lt;&#x2F;li&gt;
+&lt;li&gt;Make bookings via APIs.&lt;&#x2F;li&gt;
+&lt;li&gt;Email you the plan.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Now, this is way beyond just generating text - this is actual &lt;strong&gt;Decision + Action&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;characterstics-of-agentic-ai&quot;&gt;Characterstics of Agentic AI:&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Goal-Oriented Planning&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It starts &lt;strong&gt;with a goal&lt;&#x2F;strong&gt;, then breaks it into smaller steps and executes.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multi-Step Reasoning&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It doesn’t stop at one reply - it &lt;em&gt;iteratively&lt;&#x2F;em&gt; reasons until the goal is met.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Autonomous Decision-Making&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It chooses &lt;strong&gt;the best path&lt;&#x2F;strong&gt; or the tool on its own, based on the whatever context it has in that situation.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Uses Memory, Tools and Knowledge&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remembers Past Events (long term memory or conversational memory), uses APIs&#x2F;Scripts (tools), and refers to the docs or rules (Knowledge Base).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-makes-agentic-ai-different-from-basic-llms&quot;&gt;What makes Agentic AI different from Basic LLMs?&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Normal LLMs (Chat GPT, Gemini, Perplexity etc.) are &lt;strong&gt;Passive&lt;&#x2F;strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;They just respond to a prompt.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Agentic Systems are &lt;strong&gt;Active&lt;&#x2F;strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;They observe, think, plan, act, and even revise their actions.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;basic-agentic-structure&quot;&gt;Basic Agentic Structure&lt;&#x2F;h2&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blogs.alokranjan.me&#x2F;blog&#x2F;agentic-ai&#x2F;agentic.png&quot; alt=&quot;agentic-ai&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;figcaption&gt;Architecture of an Agentic AI&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;br &#x2F;&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;agentic-ai-vs-ai-workflow&quot;&gt;Agentic AI VS AI Workflow&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Term&lt;&#x2F;th&gt;&lt;th&gt;What it means&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;AI workflow&lt;&#x2F;td&gt;&lt;td&gt;Pre-defined steps using AI (e.g. RAG pipeline)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Agent&lt;&#x2F;td&gt;&lt;td&gt;Dynamic reasoning &amp;amp; acting system that &lt;strong&gt;adapts&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ReAct Agent&lt;&#x2F;td&gt;&lt;td&gt;&lt;em&gt;Reason + Act&lt;&#x2F;em&gt;: Think, Decide, take Action&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Control logic&lt;&#x2F;td&gt;&lt;td&gt;Like if&#x2F;else to guide actions&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Tools&lt;&#x2F;td&gt;&lt;td&gt;External Functions&#x2F;APIs&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Memory&lt;&#x2F;td&gt;&lt;td&gt;Past info&#x2F;context retained&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Planner&lt;&#x2F;td&gt;&lt;td&gt;Creates a step-wise plan&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;llms-in-this-context&quot;&gt;LLMs in this context&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LLMs&lt;&#x2F;strong&gt; (like GPT, Gemini, Claude) are the &lt;strong&gt;Core Brains&lt;&#x2F;strong&gt; of the system.&lt;&#x2F;li&gt;
+&lt;li&gt;But on their own, they can’t remember, act or plan.&lt;&#x2F;li&gt;
+&lt;li&gt;We wrap them in &lt;strong&gt;Agents&lt;&#x2F;strong&gt; to extend their &lt;em&gt;ability&lt;&#x2F;em&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;agentic-ai-example&quot;&gt;Agentic AI Example&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;AI Coding Assistant&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Can Understand bug report, edits code, runs tests, commits.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Travel Agent&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;As we have already seen the example above; There are a &lt;em&gt;gazillion&lt;&#x2F;em&gt; use-cases of Agentic AI in various domains.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;A few more examples would be an &lt;em&gt;HR Onboarding Bot&lt;&#x2F;em&gt;, An Agent that posts for you on LinkedIn, the list &lt;em&gt;goes on&lt;&#x2F;em&gt;~&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;let-s-recap&quot;&gt;Let’s recap&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM = &lt;strong&gt;Brain&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Agent = &lt;strong&gt;Brain + Body&lt;&#x2F;strong&gt;(Tools&#x2F;Memory&#x2F;Planner)&lt;&#x2F;li&gt;
+&lt;li&gt;Agentic AI = &lt;strong&gt;Autonomous Worker&lt;&#x2F;strong&gt; that thinks and achieves &lt;strong&gt;&lt;em&gt;any goal&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt; given to it&lt;&#x2F;li&gt;
+&lt;li&gt;Multi-Turn Planning = Not just simple answers, but &lt;em&gt;strategic answers&lt;&#x2F;em&gt; driven by context&lt;&#x2F;li&gt;
+&lt;li&gt;ReAct Loop = &lt;strong&gt;Reason -&amp;gt; Act -&amp;gt; Observe -&amp;gt; Repeat&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;br&gt;
+&lt;blockquote class=&quot;important&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Important&lt;&#x2F;p&gt;
+	&lt;p&gt;Before finishing up this blog; I would like for you to read this &lt;a href=&quot;https:&#x2F;&#x2F;www.anthropic.com&#x2F;engineering&#x2F;building-effective-agents&quot;&gt;Amazing Blog by Anthropic on building Agentic AI&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+</feed>
