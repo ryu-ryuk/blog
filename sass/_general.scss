@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   color: var(--fg-color); /* Text: #cdd6f4 */
   line-height: 1.5;
-  font-family: var(--font-system-ui), var(--font-emoji);
+  font-family: "Inter Variable", Inter, var(--font-system-ui), var(--font-emoji);
   overflow-wrap: break-word;
 
   &:has(#sidebar) {
@@ -43,7 +43,11 @@ body {
 
 ::selection {
   background-color: var(--accent-color-alpha); /* Mauve with transparency */
-  color: var(--contrast-color); /* Base: #1e1e2e */
+  color: var(--fg-color); /* Use light text for better contrast in dark mode */
+}
+[data-theme="light"] ::selection {
+  background-color: var(--accent-color-alpha);
+  color: var(--fg-contrast); /* Use dark text for better contrast in light mode */
 }
 
 :target:not(#main-content) {
@@ -127,6 +131,40 @@ main {
     margin-block-end: 4rem;
     width: auto;
   }
+}
+
+.featured-latest-wrapper {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  background: var(--glass-bg, rgba(49,50,68,0.07));
+  border-radius: var(--rounded-corner);
+  box-shadow: 0 2px 8px rgba(80,73,112,0.08);
+  text-align: center;
+  opacity: 0.92;
+}
+.featured-latest-wrapper h2 {
+  color: var(--fg-muted-3);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.featured-latest-wrapper h3 {
+  color: var(--purple-fg);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+.featured-latest-wrapper p {
+  color: var(--fg-muted-2);
+  font-size: 0.98rem;
+}
+.featured-latest-wrapper small {
+  color: var(--fg-muted-4);
+  font-size: 0.85rem;
+}
+
+code, pre, .code, .highlight, .hljs, .language-plaintext, .language-text {
+  font-family: "JetBrains Mono", var(--font-monospace-code);
 }
 
 @media (prefers-reduced-motion) {

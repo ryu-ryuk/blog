@@ -26,20 +26,14 @@ h6 > .zola-anchor { color: var(--ctp-subtext0, #a5adcb); }
 
 // base styles for the anchor link
 .zola-anchor {
-    position: absolute;
-    transform: translateX(0.5rem) translateY(-0.125em);
+    position: static;
+    display: inline;
+    margin-left: 0.4em;
+    margin-right: 0;
+    transform: none;
     opacity: 0;
     transition: var(--transition);
-    margin-inline-start: calc(-1em + -0.5rem);
     line-height: 1;
-
-    @media only screen and (max-width: 832px) {
-        display: none;
-    }
-
-    :root[dir*="rtl"] & {
-        transform: translateX(-0.5rem) translateY(-0.125em);
-    }
 
     // consistent hover color across all headings
     &:hover {
