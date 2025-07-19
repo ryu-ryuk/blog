@@ -1,11 +1,8 @@
 +++
-insert_anchor_links = "left"
+# insert_anchor_links = "left"
 title = "stderr.log@ryu"
 description = "init"
-template = "article_list.html"
-[extra]
-webring = ["catppuccin"]
-
+# template = "article_list.html"
 +++
 
 {% crt() %}
@@ -25,13 +22,13 @@ webring = ["catppuccin"]
 I go by **ryu** on the internet
 {% end %}
 
-I am a **backend engineer**, a **ricer**, and a to-be **cybersecurity specialist** and a lot more ;) .  
+I am a **backend engineer**, a **ricer**, a to-be **cybersecurity specialist** and a lot more ;) .  
 
 ---
 
 ## likes:
 - cats
-- phonk
+- phonk/funk
 - midnight snacks and coffee
 - good documentation — if it's not documented, it doesn't exist
 - ricing (wm, fonts, colors, everything)

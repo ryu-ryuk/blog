@@ -1,5 +1,5 @@
 +++
-authors = ["Alok (ryu)"]
+authors = ["ryu"]
 title = "Building a Containerized Financial Data API with FastAPI and Docker"
 description = "A backend project featuring FastAPI, PostgreSQL, and Docker, with a tested moving average crossover trading strategy."
 date = 2025-07-18
